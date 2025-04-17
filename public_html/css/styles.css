@@ -1,0 +1,232 @@
+/* Estilos compartilhados (já existentes) */
+body {
+    background-color: #f8f9fa;
+    padding-top: 70px; /* Espaço para o menu fixo */
+}
+
+.container {
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilos para a página welcome.php (já existentes) */
+body.welcome-page {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    min-height: 675px;
+    background-color: #F4F5FF;
+}
+
+.welcome-page p {
+    width: 100%;
+    left: 0px;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: top;
+    max-width: 550px;
+    color: #727586;
+    margin: 0px;
+}
+
+.welcome-page a:hover {
+    cursor: pointer;
+    color: #673DE6;
+    text-decoration: underline;
+}
+
+.welcome-page h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ic-launch {
+    margin-left: 10.5px;
+    width: 21px !important;
+    height: 20px !important;
+}
+
+.link-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #673DE6;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 650px;
+    max-height: 406px;
+    height: auto;
+}
+
+.navigation {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #36344D;
+}
+
+@media screen and (max-width: 580px) and (min-width: 0px) {
+    .welcome-page h1,
+    .welcome-page p,
+    .welcome-page .link-container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 650px) and (min-height: 0px) and (max-height: 750px) {
+    .welcome-page .link-container {
+        margin-top: 12px;
+    }
+    .welcome-page h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Estilos para index.php (já existentes) */
+.header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-section h1 {
+    color: #007bff;
+}
+
+.section-title {
+    color: #0056b3;
+    margin-top: 30px;
+}
+
+.contact-info {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn-agendamento {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* Estilos para auth.php, forgot_password.php, manage_users.php, pets.php, register.php, e services.php (já existentes) */
+.container.auth-container {
+    max-width: 500px; /* Ajuste específico para a página de login e recuperação */
+}
+
+.container.manage-users-container {
+    max-width: 1000px; /* Ajuste específico para a página de gerenciamento de usuários */
+}
+
+.container.pets-container {
+    max-width: 800px; /* Ajuste específico para a página de gerenciamento de pets */
+}
+
+.container.register-container {
+    max-width: 500px; /* Ajuste específico para a página de cadastro */
+}
+
+.container.services-container {
+    max-width: 1200px; /* Ajuste específico para a página de gerenciamento de serviços */
+}
+
+/* Estilo para mensagens de erro de validação (já existente) */
+.text-danger {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Estilos específicos para navbar.php (já existentes) */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .bi {
+    margin-right: 8px;
+    font-size: 1.5rem;
+}
+
+/* Estilos para pets.php */
+.pet-photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#photoModal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Garantir que os selects sejam interativos */
+.form-select {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+}
+
+/* Estilos para os botões com ícones */
+.btn i {
+    margin-right: 5px;
+}
